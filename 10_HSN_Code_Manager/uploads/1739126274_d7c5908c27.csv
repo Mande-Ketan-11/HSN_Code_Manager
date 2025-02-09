@@ -1,0 +1,90 @@
+LED TV,8528,Electronics,18
+Digital Camera,8525,Electronics,18
+Headphones,8518,Electronics,18
+USB Cable,8544,Electronics,18
+Memory Card Reader,8471,Electronics,18
+Electric Iron,8516,Home Appliances,12
+Sewing Machine,8452,Home Appliances,12
+Blender,8509,Home Appliances,18
+Electric Chopper,8509,Home Appliances,18
+Induction Cooktop,8516,Home Appliances,18
+Dining Table,9403,Furniture,18
+Bookshelf,9403,Furniture,18
+Side Table,9403,Furniture,18
+Bean Bag,9404,Furniture,5
+Wall Clock,9105,Furniture,18
+Wheat Flour,1101,Food Items,0
+Sugar,1701,Food Items,5
+Salt,2501,Food Items,0
+Turmeric Powder,910,Food Items,5
+Ghee,405,Food Items,12
+SUV Car,8703,Automobile,28
+Scooter,8711,Automobile,18
+Automobile Filter,8421,Automobile,18
+Car Horn,8512,Automobile,18
+Gear Stick,8708,Automobile,28
+Cotton Shirt,6205,Clothing,5
+Woolen Scarf,6117,Clothing,5
+Silk Saree,5006,Clothing,5
+Track Pants,6103,Clothing,5
+Socks,6115,Clothing,12
+Gravel,2517,Construction,5
+Sand,2505,Construction,5
+Granite,2516,Construction,12
+Tiles,6907,Construction,18
+Plywood,4412,Construction,18
+Antacid,3004,Pharmaceuticals,5
+Multivitamin Syrup,3004,Pharmaceuticals,12
+First Aid Kit,3006,Pharmaceuticals,12
+Thermometer,9025,Pharmaceuticals,12
+Gauze,3005,Pharmaceuticals,5
+Laptop,8471,Electronics,18
+Monitor,8528,Electronics,18
+Keyboard,8471,Electronics,18
+Mouse,8471,Electronics,18
+Webcam,8525,Electronics,18
+Shaving Cream,3307,Personal Care,18
+Body Lotion,3304,Personal Care,18
+Sunscreen,3304,Personal Care,18
+Lip Balm,3304,Personal Care,18
+Hand Sanitizer,3808,Personal Care,18
+Door Lock,8301,Security Devices,18
+Smoke Detector,8531,Security Devices,18
+Surveillance System,8525,Security Devices,12
+Fire Alarm,8531,Security Devices,12
+Access Control System,8543,Security Devices,12
+Modem,8517,Networking,18
+Network Switch,8517,Networking,18
+Ethernet Cable,8544,Networking,18
+Patch Panel,8536,Networking,18
+Network Adapter,8517,Networking,18
+SD Card,8523,Storage Devices,18
+SSD,8471,Storage Devices,18
+Pen Drive,8523,Storage Devices,18
+Portable SSD,8471,Storage Devices,18
+Hard Disk,8471,Storage Devices,18
+Eyeliner,3304,Cosmetics,18
+Mascara,3304,Cosmetics,18
+Foundation,3304,Cosmetics,18
+Concealer,3304,Cosmetics,18
+Makeup Brush Set,9603,Cosmetics,18
+Chimney,8414,Home Appliances,18
+Water Heater,8516,Home Appliances,18
+Food Processor,8509,Home Appliances,18
+Electric Stove,8516,Home Appliances,18
+Dishwasher,8422,Home Appliances,18
+Pencil,9609,Stationery,18
+Eraser,4016,Stationery,18
+Scale,9017,Stationery,18
+Geometry Box,9017,Stationery,18
+School Bag,4202,Stationery,18
+Plough,8432,Agriculture,5
+Sprinkler,8424,Agriculture,12
+Harvesting Machine,8433,Agriculture,5
+Thresher,8433,Agriculture,5
+Dairy Equipment,8434,Agriculture,5
+Weightlifting Bar,9506,Fitness,18
+Exercise Bike,9506,Fitness,18
+Dumbbell Set,9506,Fitness,18
+Resistance Band,9506,Fitness,18
+Protein Supplement,2106,Fitness,18

@@ -1,0 +1,191 @@
+Serial,HSN Code,Product Name,Category,GST Rate
+01,8450,Washing Machine,Electronics,18.00%
+02,8415,Air Conditioner,Electronics,28.00%
+03,8516,Microwave Oven,Electronics,18.00%
+04,8421,Water Purifier,Electronics,18.00%
+05,8516,Electric Kettle,Electronics,12.00%
+06,8508,Vacuum Cleaner,Electronics,18.00%
+07,8517,Smartwatch,Electronics,18.00%
+08,8443,Printer,Electronics,18.00%
+09,8471,Scanner,Electronics,18.00%
+10,8539,LED Bulb,Electronics,12.00%
+11,8414,Ceiling Fan,Electronics,18.00%
+12,9405,Table Lamp,Electronics,18.00%
+13,8507,Inverter Battery,Electronics,18.00%
+14,8541,Solar Panel,Electronics,5.00%
+15,9401,Wooden Chair,Furniture,12.00%
+16,9403,Office Desk,Furniture,18.00%
+17,9401,Sofa Set,Furniture,18.00%
+18,9404,Mattress,Furniture,5.00%
+19,6303,Curtains,Furniture,12.00%
+20,1006,Rice,Food Items,5.00%
+21,713,Pulses,Food Items,5.00%
+22,1515,Cooking Oil,Food Items,5.00%
+23,902,Tea Powder,Food Items,5.00%
+24,901,Coffee Beans,Food Items,5.00%
+25,1905,Bread,Food Items,5.00%
+26,1905,Biscuits,Food Items,18.00%
+27,2105,Ice Cream,Food Items,18.00%
+28,406,Cheese,Food Items,12.00%
+29,405,Butter,Food Items,12.00%
+30,8408,Motor Engine,Automobile,28.00%
+31,4011,Car Tyres,Automobile,28.00%
+32,8708,Brake Pads,Automobile,28.00%
+33,6506,Helmet,Automobile,18.00%
+34,8712,Bicycle,Automobile,5.00%
+35,6302,Cotton Bedsheets,Clothing,5.00%
+36,4203,Leather Jacket,Clothing,12.00%
+37,6203,Denim Jeans,Clothing,12.00%
+38,6404,Sneakers,Clothing,18.00%
+39,4202,Handbag,Clothing,18.00%
+40,2523,Cement,Construction,18.00%
+41,6901,Bricks,Construction,18.00%
+42,7214,Steel Rods,Construction,18.00%
+43,3917,PVC Pipes,Construction,18.00%
+44,3208,Paint,Construction,18.00%
+45,3003,Antibiotics,Pharmaceuticals,12.00%
+46,3004,Pain Killers,Pharmaceuticals,12.00%
+47,3004,Vitamin Tablets,Pharmaceuticals,12.00%
+48,3004,Cough Syrup,Pharmaceuticals,5.00%
+49,3005,Bandages,Pharmaceuticals,12.00%
+50,8504,Mobile Charger,Electronics,12.00%
+51,8507,Power Bank,Electronics,18.00%
+52,8518,Wireless Earbuds,Electronics,18.00%
+53,8518,Bluetooth Speaker,Electronics,18.00%
+54,8473,Laptop Cooling Pad,Electronics,12.00%
+55,8507,Car Battery,Automobile,18.00%
+56,8511,Spark Plug,Automobile,18.00%
+57,2710,Engine Oil,Automobile,18.00%
+58,3307,Car Air Freshener,Automobile,18.00%
+59,8526,GPS Tracker,Automobile,18.00%
+60,8528,Smart TV,Electronics,18.00%
+61,9504,Gaming Console,Electronics,28.00%
+62,9504,VR Headset,Electronics,18.00%
+63,8471,Tablet,Electronics,18.00%
+64,8528,Projector,Electronics,18.00%
+65,3305,Shampoo,Personal Care,18.00%
+66,3401,Soap,Personal Care,18.00%
+67,3306,Toothpaste,Personal Care,18.00%
+68,3304,Face Cream,Personal Care,18.00%
+69,8516,Hair Dryer,Personal Care,18.00%
+70,8525,CCTV Camera,Security Devices,12.00%
+71,8517,Wi-Fi Router,Networking,18.00%
+72,8523,USB Flash Drive,Storage Devices,18.00%
+73,8471,External Hard Drive,Storage Devices,18.00%
+74,8523,Memory Card,Storage Devices,18.00%
+75,3303,Perfume,Cosmetics,18.00%
+76,3307,Deodorant,Cosmetics,18.00%
+77,3304,Lipstick,Cosmetics,18.00%
+78,3304,Nail Polish,Cosmetics,18.00%
+79,8516,Hair Straightener,Cosmetics,18.00%
+80,8516,Rice Cooker,Home Appliances,18.00%
+81,8516,Induction Stove,Home Appliances,18.00%
+82,8509,Mixer Grinder,Home Appliances,18.00%
+83,8509,Juicer,Home Appliances,18.00%
+84,8516,Toaster,Home Appliances,18.00%
+85,4820,Notebook,Stationery,18.00%
+86,9608,Ball Pen,Stationery,18.00%
+87,9608,Whiteboard Marker,Stationery,18.00%
+88,8472,Stapler,Stationery,18.00%
+89,8305,Paper Clips,Stationery,18.00%
+90,8701,Tractor,Agriculture,5.00%
+91,8413,Irrigation Pump,Agriculture,5.00%
+92,3105,Fertilizer,Agriculture,5.00%
+93,3808,Pesticides,Agriculture,5.00%
+94,1209,Crop Seeds,Agriculture,5.00%
+95,9506,Gym Dumbbells,Fitness,18.00%
+96,9506,Treadmill,Fitness,18.00%
+97,9506,Yoga Mat,Fitness,5.00%
+98,9506,Skipping Rope,Fitness,5.00%
+99,9506,Boxing Gloves,Fitness,18.00%
+100,8418,Refrigerator,Electronics,18.00%
+101,8525,Digital Camera,Electronics,18.00%
+102,8518,Headphones,Electronics,18.00%
+103,8544,USB Cable,Electronics,18.00%
+104,8471,Memory Card Reader,Electronics,18.00%
+105,8516,Electric Iron,Home Appliances,12.00%
+106,8452,Sewing Machine,Home Appliances,12.00%
+107,8509,Blender,Home Appliances,18.00%
+108,8509,Electric Chopper,Home Appliances,18.00%
+109,8516,Induction Cooktop,Home Appliances,18.00%
+110,9403,Dining Table,Furniture,18.00%
+111,9403,Bookshelf,Furniture,18.00%
+112,9403,Side Table,Furniture,18.00%
+113,9404,Bean Bag,Furniture,5.00%
+114,9105,Wall Clock,Furniture,18.00%
+115,1101,Wheat Flour,Food Items,0.00%
+116,1701,Sugar,Food Items,5.00%
+117,2501,Salt,Food Items,0.00%
+118,910,Turmeric Powder,Food Items,5.00%
+119,405,Ghee,Food Items,12.00%
+120,8703,SUV Car,Automobile,28.00%
+121,8711,Scooter,Automobile,18.00%
+122,8421,Automobile Filter,Automobile,18.00%
+123,8512,Car Horn,Automobile,18.00%
+124,8708,Gear Stick,Automobile,28.00%
+125,6205,Cotton Shirt,Clothing,5.00%
+126,6117,Woolen Scarf,Clothing,5.00%
+127,5006,Silk Saree,Clothing,5.00%
+128,6103,Track Pants,Clothing,5.00%
+129,6115,Socks,Clothing,12.00%
+130,2517,Gravel,Construction,5.00%
+131,2505,Sand,Construction,5.00%
+132,2516,Granite,Construction,12.00%
+133,6907,Tiles,Construction,18.00%
+134,4412,Plywood,Construction,18.00%
+135,3004,Antacid,Pharmaceuticals,5.00%
+136,3004,Multivitamin Syrup,Pharmaceuticals,12.00%
+137,3006,First Aid Kit,Pharmaceuticals,12.00%
+138,9025,Thermometer,Pharmaceuticals,12.00%
+139,3005,Gauze,Pharmaceuticals,5.00%
+140,8471,Laptop,Electronics,18.00%
+141,8528,Monitor,Electronics,18.00%
+142,8471,Keyboard,Electronics,18.00%
+143,8471,Mouse,Electronics,18.00%
+144,8525,Webcam,Electronics,18.00%
+145,3307,Shaving Cream,Personal Care,18.00%
+146,3304,Body Lotion,Personal Care,18.00%
+147,3304,Sunscreen,Personal Care,18.00%
+148,3304,Lip Balm,Personal Care,18.00%
+149,3808,Hand Sanitizer,Personal Care,18.00%
+150,8301,Door Lock,Security Devices,18.00%
+151,8531,Smoke Detector,Security Devices,18.00%
+152,8525,Surveillance System,Security Devices,12.00%
+153,8531,Fire Alarm,Security Devices,12.00%
+154,8543,Access Control System,Security Devices,12.00%
+155,8517,Modem,Networking,18.00%
+156,8517,Network Switch,Networking,18.00%
+157,8544,Ethernet Cable,Networking,18.00%
+158,8536,Patch Panel,Networking,18.00%
+159,8517,Network Adapter,Networking,18.00%
+160,8523,SD Card,Storage Devices,18.00%
+161,8471,SSD,Storage Devices,18.00%
+162,8523,Pen Drive,Storage Devices,18.00%
+163,8471,Portable SSD,Storage Devices,18.00%
+164,8471,Hard Disk,Storage Devices,18.00%
+165,3304,Eyeliner,Cosmetics,18.00%
+166,3304,Mascara,Cosmetics,18.00%
+167,3304,Foundation,Cosmetics,18.00%
+168,3304,Concealer,Cosmetics,18.00%
+169,9603,Makeup Brush Set,Cosmetics,18.00%
+170,8414,Chimney,Home Appliances,18.00%
+171,8516,Water Heater,Home Appliances,18.00%
+172,8509,Food Processor,Home Appliances,18.00%
+173,8516,Electric Stove,Home Appliances,18.00%
+174,8422,Dishwasher,Home Appliances,18.00%
+175,9609,Pencil,Stationery,18.00%
+176,4016,Eraser,Stationery,18.00%
+177,9017,Scale,Stationery,18.00%
+178,9017,Geometry Box,Stationery,18.00%
+179,4202,School Bag,Stationery,18.00%
+180,8432,Plough,Agriculture,5.00%
+181,8424,Sprinkler,Agriculture,12.00%
+182,8433,Harvesting Machine,Agriculture,5.00%
+183,8433,Thresher,Agriculture,5.00%
+184,8434,Dairy Equipment,Agriculture,5.00%
+185,9506,Weightlifting Bar,Fitness,18.00%
+186,9506,Exercise Bike,Fitness,18.00%
+187,9506,Dumbbell Set,Fitness,18.00%
+188,9506,Resistance Band,Fitness,18.00%
+189,2106,Protein Supplement,Fitness,18.00%
+190,8528,LED TV,Electronics,18.00%
