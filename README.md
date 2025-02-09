@@ -72,11 +72,12 @@ The *PHP HSN Code Manager* is a web-based system that allows users to search for
 ---
 
 #### **Credits**  
-- **Developer:**  
-  - 🛠 **Ketan Rajendra Mande**  
+- *Developer's:*
+  - **Ketan Rajendra Mande**
+  - **Harsh Ramdhani Mishra**
 - **Frameworks & Libraries:** Bootstrap, jQuery, jsPDF  
 
 ---
 
 #### **License**  
-This project is licensed under the **MIT License**.
+This project is licensed under the *MIT License*.
