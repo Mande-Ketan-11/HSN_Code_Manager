@@ -1,32 +1,34 @@
 <?php
     session_start();
     include 'db_connection.php';
-
+    
     // Logout logic
     if (isset($_GET['logout'])) {
         session_destroy();
         header('Location: index.php');
         exit();
     }
-
+    
     // Create directory if it doesn't exist
     $uploadDir = "uploads/";
     if (!is_dir($uploadDir)) {
         mkdir($uploadDir, 0777, true);
     }
-
-    // Initialize success message variable
+    
+    // Initialize variables
     $uploadSuccess = false;
-
+    $duplicateFound = false;  // New variable to track duplicates
+    $duplicateProductName = ''; // Store the duplicate product name
+    
     // Handle file upload
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["csv_file"])) {
         $timestamp = time();
         $randomKey = bin2hex(random_bytes(5));
         $filename = $uploadDir . $timestamp . "_" . $randomKey . ".csv";
-
+    
         if (move_uploaded_file($_FILES["csv_file"]["tmp_name"], $filename)) {
             $uploadSuccess = true; // Show green tick
-
+    
             // Open and process CSV
             if (($handle = fopen($filename, "r")) !== FALSE) {
                 fgetcsv($handle); // Skip header row
@@ -35,30 +37,47 @@
                     $hsn_code = trim($data[1]);
                     $category = trim($data[2]);
                     $gst_rate = trim($data[3]);
-
-                    // Check for duplicates
+    
+                    // Check for duplicates based on product_name
                     $checkQuery = "SELECT * FROM hsn_codes WHERE product_name = ?";
                     $stmtCheck = $conn->prepare($checkQuery);
-                    $stmtCheck->bind_param("s", $hsn_code);
+                    $stmtCheck->bind_param("s", $product_name);  // Use product_name for checking
                     $stmtCheck->execute();
                     $resultCheck = $stmtCheck->get_result();
-
+    
                     if ($resultCheck->num_rows == 0) {
+                        // No duplicate found, proceed with insertion
                         $insertQuery = "INSERT INTO hsn_codes (product_name, hsn_code, category, gst_rate) VALUES (?, ?, ?, ?)";
                         $stmtInsert = $conn->prepare($insertQuery);
                         $stmtInsert->bind_param("ssss", $product_name, $hsn_code, $category, $gst_rate);
                         $stmtInsert->execute();
+                    } else {
+                        // Duplicate found, set the flag and store the product name
+                        $duplicateFound = true;
+                        $duplicateProductName = $product_name;
+                        break; // Exit the loop as we found a duplicate
                     }
                 }
                 fclose($handle);
-                echo "<script>
-                    setTimeout(function() {
-                        document.getElementById('success-alert').style.display = 'block';
-                    }, 1000);
-                    setTimeout(function() {
-                        window.location.href = 'view_hsn.php';
-                    }, 2000);
-                </script>";
+    
+                if (!$duplicateFound) {
+                    // If no duplicates were found, show success message and redirect
+                    echo "<script>
+                        setTimeout(function() {
+                            document.getElementById('success-alert').style.display = 'block';
+                        }, 1000);
+                        setTimeout(function() {
+                            window.location.href = 'view_hsn.php';
+                        }, 2000);
+                    </script>";
+                } else {
+                    // If duplicates were found, show warning message
+                    echo "<script>
+                        setTimeout(function() {
+                            document.getElementById('duplicate-alert').style.display = 'block';
+                        }, 1000);
+                    </script>";
+                }
             }
         }
     }
@@ -92,6 +111,11 @@
 
         <div id="success-alert" class="alert alert-success text-center" style="display: none; position: fixed; bottom: 20px; width: 100%;">
             ✅ File uploaded & data imported successfully! Redirecting...
+        </div>
+
+        <!-- Duplicate alert message -->
+        <div id="duplicate-alert" class="alert alert-danger text-center" style="display: none; position: fixed; bottom: 20px; width: 100%;">
+            ⚠️ Duplicate product name found: <?php echo htmlspecialchars($duplicateProductName); ?>.  Data not imported.
         </div>
 
         <div class="upload-container">
