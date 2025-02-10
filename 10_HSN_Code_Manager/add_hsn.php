@@ -5,33 +5,46 @@
         exit();
     }
     include 'db_connection.php';
-
+    
     $success = "";
     $error = "";
-
+    
     // Logout logic
     if (isset($_GET['logout'])) {
         session_destroy();
         header('Location: index.php');
         exit();
     }
-
+    
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $product_name = trim($_POST['product_name']);
         $hsn_code = trim($_POST['hsn_code']);
         $category = trim($_POST['category']);
         $gst_rate = trim($_POST['gst_rate']);
-
+    
         if (!empty($hsn_code) && !empty($product_name) && !empty($category) && !empty($gst_rate)) {
-            $query = "INSERT INTO hsn_codes (hsn_code, product_name, category, gst_rate) VALUES (?, ?, ?, ?)";
-            $stmt = $conn->prepare($query);
-            $stmt->bind_param("ssss", $hsn_code, $product_name, $category, $gst_rate);
-            if ($stmt->execute()) {
-                $success = "✅ HSN Code added successfully!";
+    
+            // Check for duplicates before inserting
+            $checkQuery = "SELECT * FROM hsn_codes WHERE product_name = ?";
+            $stmtCheck = $conn->prepare($checkQuery);
+            $stmtCheck->bind_param("s", $product_name);
+            $stmtCheck->execute();
+            $resultCheck = $stmtCheck->get_result();
+    
+            if ($resultCheck->num_rows > 0) {
+                $error = "⚠️ A product with the name '$product_name' already exists!";
             } else {
-                $error = "❌ Failed to add HSN Code!";
+                $query = "INSERT INTO hsn_codes (hsn_code, product_name, category, gst_rate) VALUES (?, ?, ?, ?)";
+                $stmt = $conn->prepare($query);
+                $stmt->bind_param("ssss", $hsn_code, $product_name, $category, $gst_rate);
+                if ($stmt->execute()) {
+                    $success = "✅ HSN Code added successfully!";
+                } else {
+                    $error = "❌ Failed to add HSN Code!";
+                }
+                $stmt->close();
             }
-            $stmt->close();
+            $stmtCheck->close(); // Close the check statement
         } else {
             $error = "⚠️ All fields are required!";
         }
@@ -48,7 +61,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+
         <!-- Admin Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
             <div class="container">
@@ -117,7 +130,7 @@
                 </form>
             </div>
         </div>
-        
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
